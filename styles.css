@@ -1,0 +1,900 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+       transition: all .5s ease;
+}
+.hide {
+    display: none;
+}
+body {
+    background-color: aliceblue;
+    margin: 0px;
+    transition: all .5s ease;
+
+}
+/*DARK MODE*/
+.darkModeWhiteText {
+    color:rgba(255, 255, 255, 0.813) !important;
+}
+.darkMode{
+    background-color: rgba(28, 27, 27, 0.801) !important;
+    color: rgba(255, 255, 255, 0.817);
+}
+.darkModeform{
+     transition: all .5s ease;
+    color: rgba(0, 0, 0, 0.865)!important;
+    background-color: rgba(179, 186, 186, 0.38) !important;
+}
+.darkModeform:hover {
+       background-color: rgba(255, 255, 255, 0.457) !important;
+ 
+}
+
+/*OVERLAY*/
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(37, 36, 36, 0.148);
+    backdrop-filter: blur(2px);
+    color: aliceblue;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+
+}
+
+.darkModeBtnHover {
+    transition: all .5s ease;
+    color: rgba(255, 255, 255, 0.91)!important;
+    background-color: rgba(89, 98, 98, 0.38) !important;
+}
+.darkModeBtnHover:hover {
+    background-color: rgba(255, 255, 255, 0.457) !important;
+}
+/*HEADER SECTION*/
+header {
+    background-color: hsl(120, 73%, 75%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    width: 100vw;
+    height: 110px;
+    align-items: center;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+
+.lightDarkMode {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 5px;
+}
+
+.parent {
+    width: 50px;
+    height: 28px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 0px;
+   background-color: rgb(255, 255, 255);
+   cursor: pointer;
+   margin: 5px auto;
+}
+.child {
+    width: 30px;
+    height: 23px;
+    border: 4px solid rgb(0, 0, 0);
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 9px;
+    background-color: rgb(0, 0, 0);
+     margin-bottom: 5px;
+     cursor: pointer;
+}
+.logo > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline;
+    margin-right: 5px;
+}
+.logo > p {
+    display: inline;
+    text-align: center;
+    align-self: baseline;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+header > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 100px;
+}
+
+ul > a{
+text-decoration: none;
+}
+
+header > ul > a > li {
+    width: 100px;
+    text-align: center;
+    box-shadow: 2px 2px 4px white, -2px -2px 4px black;
+    text-transform: capitalize;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color .5s ease;
+    transition: transform .5s ease;
+}
+
+header > ul > a > li:active {
+background-color: hsl(208, 100%, 77%);
+}
+
+header > ul > a > li:hover {
+    background-color: rgba(240, 248, 255, 0.651);
+    color: black;
+    transform: scale(1.1);
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    align-content: center;
+    margin-left: 10px;
+}
+
+
+
+/*MAIN SECTION*/
+#hero {
+    background-image: url("./pexels-thelazyartist-1346163.jpg");
+    height: 140vh;
+   
+    width: 99vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    top:100px;
+    margin: auto;
+}
+
+.backDropFilter {
+    background-color: rgba(62, 62, 62, 0.5);
+    backdrop-filter: blur(2px);
+    height: 140vh;
+    width: 99vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    
+  
+}
+.backDropFilter > h1 {
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.783);
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.backDropFilter > img {
+    max-width: 30vw;
+    max-height: 30vw;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+   
+}
+
+.backDropFilter > img {
+    transition: all .5s ease;
+
+}
+
+.backDropFilter > img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.mainText {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    width: 90vw;
+}
+.mainText > p {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: rgba(3, 250, 250, 0.53);
+    margin-bottom: 20px;
+   
+}
+
+.mainText > a > button {
+    margin-top: 50px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(232, 244, 255, 0.447);
+    transition: background-color .5s ease;
+    text-transform: capitalize;
+    box-shadow: 2px 2px 4px white, -2px -2px 4px black;
+    transition: transform .5s ease;
+    position: absolute;
+    left: 48%;
+    bottom: 0px;
+    margin-bottom: 20px;
+ 
+}
+
+.mainText > a > button:hover {
+    background-color: rgba(232, 244, 255, 0.751);
+    transform: scale(1.3);
+    font-weight: bold;
+}
+
+.mainText > h3 {
+    font-size:2.1rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.868);
+}
+
+/*CLASSES SECTION*/
+.sortError {
+    margin: 10px auto;
+    position: absolute;
+    left: auto;
+    text-align: center;
+    width: 50vw;
+    
+}
+
+.classes {
+    position: relative;
+    top: 100px;
+    background-color: hsla(0, 0%, 90%, 0.596);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.classes > h1 {
+    text-align: center;
+}
+
+.searchArea {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.searchContainer {
+    margin-right: 50px;
+    text-align: center;
+    min-width: 200px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.sort, input[type="search"] {
+    width: 20vw;
+    text-align: center;
+    cursor: pointer;
+    height: 30px;
+    border: none;
+    box-shadow: 2px 2px 4px rgb(186, 194, 187), -2px -2px 4px hsl(0, 0%, 30%);
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 5px;
+    transition: background-color .5s ease;
+    transition: transform .5s ease;
+}
+.sort, input[type="search"]:focus {
+    border: none;
+    outline: none;
+}
+
+.sort:hover, input[type="search"]:hover {
+    background-color: white;
+    transform: scale(1.1);
+
+}
+
+.searchContainer > label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.classSessions > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+
+.classSessions > ul > li > button {
+    width: 10vw;
+    background-color: rgba(240, 248, 255, 0.142);
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(255, 255, 255), -2px -2px 4px rgba(0, 0, 0, 0.53);
+    cursor: pointer;
+    transition: all .5s ease;
+    border: none;
+    margin-top: 20px;
+    overflow-x: hidden;
+}
+
+.day {
+    margin-top: 0px;
+    padding-top: 0px;
+    box-shadow:inset 2px 2px 4px rgba(58, 52, 52, 0.815);
+    border-radius: 10px;
+
+}
+
+.day > h2 {
+    margin-top: 0px;
+    padding-top:0px;
+}
+
+.classSessions > ul > li > button:hover {
+ transform: scale(1.1);
+ background-color: rgba(160, 199, 234, 0.799);
+}
+
+.classSessions > ul > li > button:active {
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+}
+
+.classSessions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: center;
+    margin-bottom: 20px;
+
+
+
+}
+.classSessions > h2 {
+    margin: 30px auto 10px;
+}
+
+.classSessions > div {  
+    border: none;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.classSessions > div > h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.sessions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.session {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    gap: 15px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: white;
+    border: none;
+    box-shadow: 2px 2px 4px rgb(186, 194, 187), -2px -2px 4px hsl(0, 0%, 30%);
+    padding: 10px;
+    transition: all .5s ease;
+    border-radius: 10px;
+
+}
+
+.session:hover {
+    transform: scale(1.03);
+}
+
+.session > img {
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    margin: auto;
+}
+
+.join {
+    max-width: 30%;
+    height: 30px;
+    margin: auto;
+    min-width: 100px;
+    background-color: rgba(240, 248, 255, 0.24);
+    box-shadow: 2px 2px 4px rgb(186, 194, 187), -2px -2px 4px hsl(0, 0%, 30%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.join:hover {
+    background-color: rgba(200, 223, 243, 0.884);
+    transform: scale(1.05);
+}
+
+
+
+/*INSTRUCTORS SECTION*/
+.instructors {
+    position: relative;
+    top: 100px;
+    padding: 5px;
+    margin-top: 30px;
+}
+.instructors > h1 {
+    text-align: center;
+}
+
+.description {
+    text-wrap: wrap;
+    background: radial-gradient(ellipse at center, rgba(137, 43, 226, 0.525), white, transparent);
+}
+
+.instructor1 {
+    width: 70vw;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(46, 45, 45, 0.308), -2px -2px 4px rgba(0, 0, 0, 0.733);
+    transition: all .5s ease;
+    position: relative;
+    background: radial-gradient(circle at top left, rgb(3, 179, 3), yellowgreen, yellow, white, transparent );
+    background: radial-gradient(circle at center, white, hsl(0, 0%, 100%), hsl(60, 100%, 50%));
+    margin:20px auto 0px;
+}
+
+.instructor1:hover {
+    transform: scale(.99);
+}
+
+.instructor {
+    display: none;
+}
+
+.image {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+
+.name {
+    color: blueviolet;
+    font-size: 1.5rem;
+}
+
+.position {
+    font-size: large;
+}
+
+.name, .position {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/*FANFACT SECTION , HIDDEN*/
+.description ,.fanFact{
+    text-wrap: wrap;
+    width: 50%;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px black;
+    padding: 10px;
+    transition: all .5s ease;
+    background: radial-gradient(ellipse at center, rgba(137, 43, 226, 0.525), white, transparent);
+
+}
+
+.contactInstructor {
+    min-width: 100px;
+    margin: 20px auto;
+    height: 30px;
+    background-color: rgba(240, 248, 255, 0.699);
+    transition: all .5s ease;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(46, 45, 45, 0.308), -2px -2px 4px rgba(0, 0, 0, 0.733);
+    transition: all .5s ease;
+    font-weight: bold;
+}
+
+.contactInstructor:hover {
+    background-color: rgba(138, 191, 237, 0.653);
+    transform: scale(1.1);
+}
+
+.prevNextbtn {
+    background-color: rgba(161, 156, 156, 0.78);
+    transition: all .5s ease;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+
+
+}
+
+#prevbtn {
+
+    left: 0%;
+    margin-left: 10px;
+}
+
+#nextbtn {
+    margin-right: 10px;
+    right: 0%;
+}
+
+.prevNextbtn:hover {
+    transform: scale(1.05);
+    background-color: rgba(161, 156, 156, .9);
+}
+
+.prevNextbtn:active {
+    background-color: rgba(218, 212, 212, 0.9);
+}
+
+/*hidden contact section for the instructor*/
+.contactInstructorfunctionality {
+    width: 28vw;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(228, 4, 228, 0.815), -2px -2px 4px greenyellow;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    justify-self: center;
+    text-align: center;
+    position: fixed;
+    top: 130px;
+    z-index: 2;
+    background-color: rgb(231, 234, 236);
+    height: 65vh;
+} /*add contactInstructorfunctionality class to show the contents*/
+
+.contactImage {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+}
+
+.contactInstructorfunctionality > img {
+    margin: auto;
+}
+
+.contactInstructorfunctionality > input[type="textarea"] {
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    box-shadow: inset 2px 2px 4px yellowgreen, inset -2px -2px 4px rgba(255, 0, 212, 0.785);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contactInstructorfunctionality > input[type="text"] {
+    width: 50%;
+    height: 5vh;
+    margin: auto;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    box-shadow: inset 2px 2px 4px yellowgreen, inset -2px -2px 4px rgba(255, 0, 212, 0.785);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.contactInstructorfunctionality > input[type="textarea"]:focus,.contactInstructorfunctionality > input[type="text"]:focus {
+    border: none;
+    outline: none;
+}
+
+.contactInstructorfunctionality > button {
+    margin: auto;
+    width: 100px;
+    background-color: rgba(204, 227, 247, 0.269);
+    transition: all .5s ease;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px black;
+    height: 30px;
+    font-weight: bold;
+}
+
+.contactInstructorfunctionality > button:hover {
+    transform: scale(1.1);
+    background-color: rgba(144, 191, 232, 0.635);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+.contacts > a > button {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:all .5s ease;
+    background-color: rgba(255, 255, 255, 0.048);
+    width: 3.5rem;
+    height:3.5rem;
+    margin-bottom: 10px;
+}
+
+.contacts > a > button:hover {
+    transform:scale(1.1);
+}
+
+.instructorSocials, .footerSocialImage {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+}
+.fanFact > h3 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.833);
+}
+
+/* sendResultMessage*/
+.sendResultMessage{
+    background-color: rgba(235, 239, 239, 0.922);
+    height: 200px;
+    width: 300px;
+    justify-self: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(44, 216, 56, 0.575), -5px -5px 8px rgba(35, 34, 34, 0.475);
+    position: fixed;
+    top: 20%;
+    margin: 0px auto;
+    align-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    overflow-y: hidden;
+    font-weight: bold;
+    text-transform: capitalize;
+    z-index: 2;
+
+}
+.sendResultMessage > p {
+    align-self: center;
+    text-align: center;
+
+
+}
+
+
+
+/*CONTACT SECTION*/
+.contact {
+    position: relative;
+    top: 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    justify-self: center;
+    box-shadow: inset 2px 2px 4px rgba(8, 8, 8, 0.05), inset -2px -2px 4px hsl(240, 100%, 99%);
+    border-radius: 10px;
+}
+.contact h1 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.639);
+}
+.contact > form {
+width: 50%;
+margin: 20px auto;
+border: none;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+text-align: center;
+box-shadow:  2px 2px 4px hsl(0, 98%, 49%),  -2px -2px 4px hsl(308, 100%, 50%);
+transition: all .5s ease;
+position: relative;
+}
+
+.contact > form:hover {
+    transform: scale(1.05);
+    margin: 30px auto;
+}
+
+.contact > form > input,.contact > form > textarea {
+    width: 80%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px white, -2px -2px 4px hsl(0, 0%, 50%);
+    transition: all 0.5s ease;
+    margin: 0px auto 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact > form > input:hover,.contact > form > textarea:hover {
+    transform: scale(1.05);
+    margin-top: 5px;
+
+}
+
+.contact > form > input:focus,.contact > form > textarea:focus{
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 4px hsl(59, 98%, 49%),  -2px -2px 4px hsl(308, 100%, 50%);
+}
+
+.contact > form > textarea {
+    max-width: 80%;
+    min-width: 80%;
+    min-height: 50px;
+    max-height: 200px;
+    align-content: center;
+}
+
+.contact > form > h1 {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.contact > form > label {
+    text-align:left ;
+    margin-left: 10%;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+#message {
+    height: 100px;
+    margin-bottom: 60px;
+    
+ 
+}
+
+.formbtn {
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    background-color: rgba(245, 245, 245, 0);
+    transition: all .5s ease;
+    margin:20px auto;
+    position: absolute;
+    bottom:0% ;
+    box-shadow: 2px 2px 4px white, -2px -2px 4px hsl(0, 0%, 50%);
+    font-weight: bold;
+    color: hsla(0, 0%, 30%, 0.861);
+    cursor: pointer;
+}
+
+#formSubmit {
+    right: 10%;
+}
+
+#formReset {
+    left: 10%;
+}
+.formbtn:hover {
+    transform: scale(1.1);
+    background-color: rgba(121, 184, 239, 0.66);
+
+}
+
+iframe {
+    width:20vw;
+    height:20vw;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: none;
+    box-shadow:  2px 2px 4px rgba(8, 8, 8, 0.324),  -2px -2px 4px hsl(240, 100%, 99%);
+
+}
+
+iframe:hover {
+    width: 70%;
+    height: 50vh;
+    border-radius:10px;
+}
+
+
+
+/*FOOTER SECTION*/
+footer {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: none;
+    color: rgba(0, 0, 0, 0.553);
+    padding-top: 20px;
+}
+
+hr {
+    width: 50vw;
+    margin: 20px auto;
+}
+
+footer > p {
+    margin-bottom: 10px;
+}
+
+.tradeMarks {
+    color: rgba(0, 0, 0, 0.548);
+    text-decoration: none;
+}
+
+.footerSocials {
+    opacity: .8;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tradeMarks > a {
+    text-decoration: none;
+}
+
+
+
+/*SITE RESPONSIVENESS*/
+@media only screen and (max-width:840px) {
+    /*IN A NEW FILE*/
+}

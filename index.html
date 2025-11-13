@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenflow Yoga Studio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./midmorningyoga.png" type="image/x-icon">
+    <link rel="stylesheet" href="./responsiveness.css">
+
+</head>
+<body data-page="index" class="">
+    <header id="header">
+        <div class="logo">
+            <img src="./lotus.webp" alt="logo">
+
+             <p> zanflow yoga studio</p>
+
+        </div>
+
+
+        <ul> 
+            <a href="#hero"><li>home</li></a>
+            <a href="#classes"><li>classes</li></a>
+            <a href="#instructors"><li>instructors</li></a>
+            <a href="#contact"><li>contact</li></a>
+        </ul>
+        <div class="lightDarkMode">
+            <div class="parent"><div class="child"></div></div>
+            <p class="mode">☀ Light Mode</p>
+        </div>
+    </header>
+
+    <section id="hero" class="main">
+        <div class="backDropFilter">
+            <h1 class="whiteOnDarkmode">welcome to zenflow workout studio:</h1>
+            <img src="./vecteezy_lotus-3d-rendering-icon-illustration_28611095.png" alt="Zenflow">
+            <div class="mainText">
+                <p class="whiteOnDarkmode">Find your flow. Join our Yoga community today.</p>
+                <h3>Opening Hours</h3>
+                <p class="whiteOnDarkmode">
+                    Monday – Friday: 6:00 AM – 8:00 PM <br>
+
+                    Saturday: 8:00 AM – 6:00 PM <br>
+
+                    Sunday: Closed
+                </p>
+                 <a href="#classes"><button>view classes</button></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+  <section id="classes" class="classes">
+    <h1>Classes</h1>
+        <div class="searchArea">
+            <select name="sortby" id="sortby" class="sort">
+                <option value="null" selected disabled>Filter Class By?</option>
+                <option value="beginner">Beginner</option>
+                <option value="advanced">Advanced</option>
+                <option value="meditation">Meditation</option>
+            </select>
+            <div class="searchContainer">       
+                <input type="search" id="search" placeholder="Search Class">
+                <label for="search">🔍Search</label>
+            </div>
+        </div>
+        
+        <div class="classSessions">
+            <h2 id="classH2">Sessions</h2>
+            <ul class="daybtn">
+                <li><button id="monday">Monday</button></li>
+                <li><button id="tuesday">Tuesday</button></li>
+                <li><button id="wednesday">Wednesday</button></li>
+                <li><button id="thursday">Thursday</button></li>
+                <li><button id="friday">Friday</button></li>
+                <li><button id="saturday">Saturday</button></li>
+            </ul>
+            <!-- general layout of sessions in a day,. to be added in js-->
+            <div id="day" class="hide day">
+                </div>
+            </div>
+        </div>
+   </section> 
+   
+    <section id="instructors" class="instructors">
+         <h1>Instructors:</h1>
+        <div id="instructor1" class="instructor1">
+            <p class="name">David Kori</p>
+            <p class="position">Head Instructor & Founder</p>
+            <img src="./david.jpg" alt="instructor name" class="image">
+            <p class="description">
+                With over 10 years of teaching experience,
+                Ava specializes in Hatha and Vinyasa yoga. 
+                Her calm energy and attention to alignment help
+                students build both strength and mindfulness.
+            </p>
+            <button id="contactInstructor" class="contactInstructor contactInstructor1">Contact 📧</button> <!--append this through javascript to every instructor add add some functionality-->
+            <button id="prevbtn" class="prevNextbtn">&#10094</button>
+            <button id="nextbtn" class="prevNextbtn">&#10095</button>
+        </div>
+        <!-- the contact button pop up functionality-->
+         <div id="contactInstructorfunctionality" class="hide  ">
+            <p id="instructorName" class="name">Hey! Talk To: David Kori<!--eg: contact Ava Richard --></p>
+            <img src="./david.jpg" alt="instructor name" id="lecturerImage" class="contactImage">
+            <input type="text" placeholder="Enter Name/Contact" min="1" id="enteredName">
+            <input type="textarea" placeholder="Input Your Message" min="50" max="500" id="enteredMessage">
+            <button type="submit" class="sendMessage">Send</button>
+            <div class="contacts">
+                <a href="mailto: mutugidavid37@gmail.com" target="_blank"><button><img src="./mail_24dp_FFFFFFF_FILL0_wght400_GRAD0_opsz24.svg" class="instructorSocials" alt=""></button></a>
+                <a href="https://wa.me/254115685773" target="_blank"><button><img src="vecteezy_whatsapp-logo-png-icon_16716480.png" class="instructorSocials" alt=""></button></a>
+                <a href="tel:+254115685773" target="_blank"><button><img src="./call-icon.png" class="instructorSocials" alt=""></button></a>
+            </div>
+
+         </div>
+         <div id="fanFact" class="hide ">
+            <h3>fan fact😂👻</h3>
+            <p id="fact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, 
+                quod accusantium ea id laboriosam a reprehenderit error 
+                dolor saepe recusandae maxime tenetur, ullam quibusdam! Sunt illum voluptatibus hic 
+                saepe earum.
+            </p>
+            <!--paragraph with an id fact to becreated and textFact added in it -->
+        </div> <!--remember to add at least 6 fan facts about yoga in an array and display them here-->
+    </section>
+
+
+    <section id="contact" class="contact">
+        <form action="https://formspree.io/f/xgvrwojj" method="POST" class="formElement">
+            <h1 class="white">Contact zenflow today!</h1>
+            <label for="name">Name: </label>
+            <input type="text" placeholder="Enter Your Name" min="1" required id="name">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter Your Email" id="email" required>
+            <label for="number">Whatsapp Number:</label>
+            <input type="text" placeholder="Enter Your Whatsapp Number" id="number">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" minlength="40" maxlength="500" placeholder="Send Me a Message"></textarea>
+            <button type="submit" id="formSubmit" class="formbtn">Send</button>
+            <button type="reset" id="formReset" class="formbtn">Reset</button>
+        </form>
+        <h1 class="white">Navigator Map</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.858993155845!2d36.821946!3d-1.292066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d63e7f9b6d%3A0x2a0d1f4b4dfb6a34!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1704567890123!5m2!1sen!2ske"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <footer id="footer">
+        <p>Address: 128 Serenity Avenue, Willow Park, Greenfield, CA 94027</p>
+
+        <p>Email: mutugidavi37@gmail.com</p>
+
+        <div class="footerSocials">
+            <a href="https://www.instagram.com/kooridavid/" target="_blank"><img src="./instagram.png" alt="" class="footerSocialImage"></a>
+            <a href="https://wa.me/254115685773" target="_blank"><img src="./vecteezy_whatsapp-logo-png-icon_16716480.png" alt="" class="footerSocialImage"></a>
+            <a href="https://www.linkedin.com/in/david-mutugi-b664b02aa/" target="_blank"><img src="./linkedin.png" alt="" class="footerSocialImage"></a>
+            <a href="https://t.me/+KxePNFcYuXs4OWM0" target="_blank"><img src="./telegram.png" alt="" class="footerSocialImage"></a>
+        </div>
+         <hr>
+
+        <p class="tradeMarks">&copy; 2025 @ Created by with &hearts; by: <a href="https://wa.me/254115685773" class="KoriDevifys" target="_blank">KoriDevifys</a></p>
+
+    </footer>
+    <p id="sendResultMessage" class="hide"></p>
+    <div id="overlay1" class="hide"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

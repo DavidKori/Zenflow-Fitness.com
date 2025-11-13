@@ -1,0 +1,334 @@
+/*SITE RESPONSIVENESS*/
+@media only screen and (max-width:840px) {
+    body {
+        border: -2px solid lightgreen;
+    }
+   /*  HEADER SECTION8*/
+   header {
+    flex-direction: column;
+    padding: 5px;
+    height: auto;
+   }
+   header > ul {
+    flex-wrap: wrap;
+    margin: 10px auto;
+   }
+    header {
+        position: relative !important;
+    }
+
+   /*MAIN SECTION*/
+    .mainText > p {
+        font-size: 1.5rem;
+    }
+    #hero {
+        top: 0px;
+    }
+    .mainText > a > button {
+        left: 40%;
+    }
+
+   /*CLASSES SECTION8*/
+    .classes {
+        top: 0px;
+    }
+    
+    .searchArea {
+        gap: 10px;
+    }
+    .sort, input[type="search"] {
+        width: 30vw;
+    }
+    .sortError {
+        width: 90vw;
+        height: fit-content;
+    }
+    .classSessions > ul {
+        gap: 4vw;
+        flex-wrap: wrap;
+    }
+
+    .classSessions > ul > li > button {
+        width: 25vw;
+        padding: 2px;
+    }
+
+   /*INSTRUCTORS SECTION*/
+   .instructors {
+    top: 0px;
+   }
+   /*hidden contact section for the instructor*/
+   .contactInstructorfunctionality {
+    width: 50vw;
+    top: 15vh;
+    height: 72vh;
+   }
+
+   .sendResultMessage {
+    top: 31%;
+    width: 300px;
+    height: 200px;
+   }
+
+
+   /*CONTACT SECTION*/
+   .contact {
+    width: 90vw;
+    top: 0px;
+   }
+   .contact > form  {
+    width: 60%;
+   }
+
+   iframe {
+    width: 25vw;
+    height: 25vw;
+   }
+   iframe:hover {
+    width: 70%;
+    height: 40vh;
+   }
+
+   /*FOOTER SECTION*/ 
+   footer {
+    top: 0px;
+   }
+   footer > p {
+    width: 80%;
+    margin: auto ;
+   }
+   .instructorSocials, .footerSocialImage {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 540px) {
+
+  /*  HEADER SECTION8*/
+   header > ul {
+    flex-wrap: wrap;
+    margin-right: 20px;
+   }
+}
+
+
+
+
+@media only screen and (max-width: 515px) {
+
+  /*  HEADER SECTION8*/
+
+
+    /*MAIN SECTION*/
+    .mainText {
+        width: 90%;
+    }
+    .mainText > p {
+        font-size: 1.3rem;
+        width: 90%;
+    }
+    #hero {
+        top: 0px;
+    }
+
+       /*CLASSES SECTION8*/
+    .classes {
+        top: 0px;
+    }
+    .searchArea {
+        flex-wrap: wrap;
+        justify-content: center;
+}
+    .searchContainer {
+    margin-right: 0px;
+    }
+    .classSessions > ul {
+        padding-left: 0px;
+
+    }
+    .contactInstructorfunctionality {
+        top: 10vh;
+        width: 70vw;
+        height: 70vh;
+    }
+    
+    /*INSTRUCTORS SECTION*/
+    .instructors {
+        top: 0px;
+    }
+    .instructor1 {
+        width: 90vw;
+    }
+    .description {
+        width: 80%;
+    }
+    .image {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+}
+.sendResultMessage {
+    top: 40%;
+    width: 200px;
+    height: 150px;
+}
+
+    /*CONTACT SECTION*/
+    .contact {
+        top: 0px;
+
+    }
+    .contact > form > h1 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.763);
+    }
+    .contact > form {
+        width: 90%;
+    }
+
+    .contactImage {
+        width: 20vw;
+        height: 20vw;
+    }
+
+       /*FOOTER SECTION*/ 
+   footer {
+    top: 0px;
+   }
+}
+
+@media only screen and (max-width: 297px) {
+    .contacts > a  {
+        width: 30px;
+
+    }
+    .classSessions > h2{
+        margin-top: 50px !important;
+        top: 30px;
+    }
+}
+
+@media only screen and (max-width: 285px) {
+
+    /*  HEADER SECTION8*/
+
+    
+    /*MAIN SECTION*/
+    .mainText > p {
+        font-size: 1.3rem;
+    }
+    #hero {
+        top: 0px;
+    }
+    .mainText > a > button {
+        left: 30%;
+    }
+
+    
+       /*CLASSES SECTION8*/
+    .classes {
+        top: 0px;
+    }
+        /*INSTRUCTORS SECTION*/
+    .instructors {
+        top: 0px;
+    }
+    .sendResultMessage {
+        top: 60%;
+        height: 110px;
+        width: 80vw;
+    }
+       .contactInstructorfunctionality {
+        width: 80vw;
+        
+    }
+        /*CONTACT SECTION*/
+    .contact {
+        top: 0px;
+
+    }
+ 
+    
+       /*FOOTER SECTION*/ 
+   footer {
+    top: 0px;
+   }
+       .instructorSocials, .footerSocialImage {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+    }
+
+}
+
+@media only screen and (max-width:250px) {
+    /*MAIN SECTION*/
+    .mainText > a > button {
+        left: 30%;
+    }
+    /*ISTRUCTORS SECTION*/
+    .instructorSocials {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    
+ 
+
+}
+
+@media only screen and (max-width:180px) {
+    /*HEADER SECTION*/
+
+    /*MAIN SECTION*/
+    #hero {
+        top: 0px;
+    }
+    .mainText > a > button {
+        left: 10%;
+    }
+    .mainText > p {
+        font-size: 1.1rem;
+    }
+
+    /*CLASSES SECTION*/
+    .classes {
+        top: 0px;
+    }
+    .classSessions > h2{
+        margin-top: 70px !important;
+        top: 30px;
+    }
+
+        /*INSTRUCTORS SECTION*/
+    .instructors {
+        top: 0px;
+    }
+
+    /*CONTACT SECTION*/
+    .contact {
+        top: 0px;
+
+    }
+
+    /*FOOTER SECTION*/  
+    footer {
+    top: 0px;
+   }
+
+
+}
