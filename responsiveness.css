@@ -23,9 +23,26 @@
     }
     #hero {
         top: 0px;
+        height: 100vh;
     }
     .mainText > a > button {
         left: 40%;
+        margin-top: 0px;
+        bottom: 40px;
+    }
+
+    .backDropFilter > img{
+    margin: 1vw auto;
+    justify-self: center;
+    }
+
+
+
+    .backDropFilter {
+    height: 100vh;
+    }
+    .mainText {
+    margin-bottom: 0px;
     }
 
    /*CLASSES SECTION8*/
@@ -113,12 +130,59 @@
   /*  HEADER SECTION8*/
    header > ul {
     flex-wrap: wrap;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    justify-content: center;
+    padding: 0px 20px;
    }
+   header > ul > a{
+    color: black;
+    text-align: center;
+    
+   }
+   header > ul > a > button {
+    align-content: center;
+   }
+   /* MAIN SECTION */
+.backDropFilter > img{
+    margin: 1vw auto;
+    justify-self: center;
+}
+.mainText > a > button {
+   margin-top: 0px;
+   bottom: 40px;
+}
+
+#hero {
+    height: 100vh;
+}
+.backDropFilter {
+    height: 100vh;
+}
+.mainText {
+    margin-bottom: 0px;
+}
+/*INSTRUCTOR SECTION*/
+.instructors {
+    padding: 0px;
+}
+#instructor1 {
+    width: 100vw;
+}
+/*CONTACT SECTION*/
+.contact > form {
+box-shadow:  2px 2px 4px hsla(0, 1%, 19%, 0.276),  -2px -2px 4px hsla(300, 1%, 43%, 0.409);
+
+
+}
 }
 
 
+@media screen and (max-width:370px) {
 
+    
+}
 
 @media only screen and (max-width: 515px) {
 

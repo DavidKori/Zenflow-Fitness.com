@@ -91,10 +91,10 @@
             <p class="name">David Kori</p>
             <p class="position">Head Instructor & Founder</p>
             <img src="./david.jpg" alt="instructor name" class="image">
-            <p class="description">
+            <p class="description" id="theDescription">
                 With over 10 years of teaching experience,
                 Ava specializes in Hatha and Vinyasa yoga. 
-                Her calm energy and attention to alignment help
+                His calm energy and attention to alignment help
                 students build both strength and mindfulness.
             </p>
             <button id="contactInstructor" class="contactInstructor contactInstructor1">Contact 📧</button> <!--append this through javascript to every instructor add add some functionality-->
@@ -115,30 +115,22 @@
             </div>
 
          </div>
-         <div id="fanFact" class="hide ">
-            <h3>fan fact😂👻</h3>
-            <p id="fact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, 
-                quod accusantium ea id laboriosam a reprehenderit error 
-                dolor saepe recusandae maxime tenetur, ullam quibusdam! Sunt illum voluptatibus hic 
-                saepe earum.
-            </p>
-            <!--paragraph with an id fact to becreated and textFact added in it -->
-        </div> <!--remember to add at least 6 fan facts about yoga in an array and display them here-->
+   <!--remember to add at least 6 fan facts about yoga in an array and display them here-->
     </section>
 
 
     <section id="contact" class="contact">
-        <form action="https://formspree.io/f/xgvrwojj" method="POST" class="formElement">
+        <form  class="formElement">
             <h1 class="white">Contact zenflow today!</h1>
             <label for="name">Name: </label>
-            <input type="text" placeholder="Enter Your Name" min="1" required id="name">
+            <input type="text" placeholder="Enter Your Name"   id="name">
             <label for="email">Email:</label>
-            <input type="email" placeholder="Enter Your Email" id="email" required>
+            <input type="email" placeholder="Enter Your Email" id="email" >
             <label for="number">Whatsapp Number:</label>
             <input type="text" placeholder="Enter Your Whatsapp Number" id="number">
             <label for="message">Message:</label>
-            <textarea name="message" id="message" minlength="40" maxlength="500" placeholder="Send Me a Message"></textarea>
-            <button type="submit" id="formSubmit" class="formbtn">Send</button>
+            <textarea name="message" id="message"  maxlength="500" placeholder="Send Me a Message"></textarea>
+            <button  id="formSubmit" class="formbtn">Send</button>
             <button type="reset" id="formReset" class="formbtn">Reset</button>
         </form>
         <h1 class="white">Navigator Map</h1>
@@ -151,7 +143,7 @@
     </section>
 
     <footer id="footer">
-        <p>Address: 128 Serenity Avenue, Willow Park, Greenfield, CA 94027</p>
+        <p>Address: P.O BOX 41 Kianyaga, Road Park, Kerugoya, <strong>KE</strong> 10301</p>
 
         <p>Email: mutugidavi37@gmail.com</p>
 
@@ -163,7 +155,7 @@
         </div>
          <hr>
 
-        <p class="tradeMarks">&copy; 2025 @ Created by with &hearts; by: <a href="https://wa.me/254115685773" class="KoriDevifys" target="_blank">KoriDevifys</a></p>
+        <p class="tradeMarks">&copy; 2025 @ Created by with &hearts; by: <a href="https://wa.me/254115685773" class="KoriDevifys" target="_blank"><strong>KoriDevifys</strong></a></p>
 
     </footer>
     <p id="sendResultMessage" class="hide"></p>

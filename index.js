@@ -3,7 +3,7 @@
 const page =document.body.dataset.page;
 
 if (page === 'index') {
-    
+
 
     const headerSection = document.getElementById('header');
     const mainSection = document.getElementById('hero');
@@ -48,13 +48,14 @@ if (page === 'index') {
     ];
 
     const lecturerDescription = [
-                    "With over 10 years of teaching experience,Ava specializes in Hatha and Vinyasa yoga. Her calm energy and attention to alignment helpstudents build both strength and mindfulness.",
+                    "With over 10 years of teaching experience,Ava specializes in Hatha and Vinyasa yoga. His calm energy and attention to alignment helpstudents build both strength and mindfulness.",
                     'Liam blends yoga with functional strength training, focusing on posture correction and endurance. His sessions are perfect for students looking to balance flexibility with power.',
                     'Sofia’s classes focus on relaxation, breathwork, and deep tissue release. She helps students unwind from stress through gentle movements and mindfulness.',
-                    'Ethan guides students through meditation, pranayama, and stress management practices. His sessions emphasize inner stillness and emotional balance.',
+                    'Ethan guides students through meditation, pranayama, and stress management practices. Her sessions emphasize inner stillness and emotional balance.',
                     'Maya’s vibrant and creative sequences challenge both the body and mind. She’s known for her uplifting energy and focus on graceful transitions.',
                     'Noah combines yoga, balance drills, and mobility work to improve coordination and stability. His classes are great for athletes and beginners alike.'
-    ]
+    ];
+
 
          let selectedDay = undefined;
         const dayContainer = document.getElementById('day');
@@ -96,7 +97,7 @@ if (page === 'index') {
                     'Pilates Fusion: Core & Control',
                     'Balance & Coordination Training',
                     'Mindful Movement & Body Awareness'
-        ]
+        ];
 
         const classes = {
                 day:"",
@@ -127,22 +128,48 @@ if (page === 'index') {
                     }
                 }
                 
-            }
+            };
         const classImages = [
             './morningyoga.png',
             './midmorningyoga.png',
             './afternoonyoga.jpeg',
             './eveningyoga.png'
         ];
+    const facts = [
+        "Yoga was originally practiced by ancient warriors to stay strong and focused.",
+        "Just 10 minutes of walking can boost your mood and increase energy levels.",
+        "Planks work more than 20 muscles at the same time, including your core, shoulders, and glutes.",
+        "Laughing for 10–15 minutes can burn up to 40 calories.",
+        "Flexibility can improve at any age — even people over 70 can gain range of motion with regular stretching.",
+        "Listening to music while exercising can increase endurance by up to 15%.",
+        "Yoga helps activate the parasympathetic nervous system, which reduces stress and improves digestion.",
+        "Strength training boosts metabolism even hours after the workout is done.",
+        "Just smelling peppermint can make you feel more energized during workouts.",
+        "Doing balance exercises can improve brain function and coordination.",
+        "You burn more calories sleeping than watching TV, because your brain is more active during sleep.",
+        "Regular yoga practice increases lung capacity and improves breathing efficiency.",
+        "Walking backward can strengthen different muscle groups and improve balance.",
+        "The human body has over 650 muscles, and most are active during everyday movement.",
+        "Exercise can increase your hippocampus size — the part of the brain responsible for memory.",
+        "Yoga inversions like downward dog help improve circulation and reduce fatigue.",
+        "Jumping rope burns more calories per minute than running.",
+        "Sitting for long periods can weaken glutes, leading to posture problems and back pain.",
+        "Stretching after a workout can reduce soreness and improve recovery speed.",
+        "Even light exercise releases endorphins, which act as natural painkillers and mood boosters."
+        ];
+
 
    /*NO.1*/displayClasses();
    /*NO.3*/lightDarkMode()
    /*NO.3*/ search();
    /*NO.4*/ filter();
    /*NO.5*/ displayInstructors;
-   /*NO.6*/ PrevInstructor();
-   /*NO.7*/ nextInstructor();
-   /*NO.8*/ showInstructorContact();
+   /*NO.6*/ displayFact();
+   /*NO.7*/ showFact();
+   /*NO.8*/ PrevInstructor();
+   /*NO.9*/ nextInstructor();
+   /*NO.10*/ showInstructorContact();
+   /*NO.11*/ sendAMessage();
           // HEADER SECTION
     // darkMode functionality
     function lightDarkMode () {
@@ -900,7 +927,7 @@ if (page === 'index') {
         
 
         const newError = document.querySelector('.sortError');
-        console.log(newError);
+        //console.log(newError);
             let normal = [];
             const searchBox = document.querySelector('#search');
             //console.log(searchBox);
@@ -1337,7 +1364,31 @@ if (page === 'index') {
         nextBtn.innerHTML = '&#10095';
         instructor.append(nextBtn);
 
+
+
     };
+    function displayFact () {
+                //FACT DIV AND DISPLAY FUNCTIONALITY
+               const instructor= document.getElementById('instructor1');
+               const contactInstructorBtn =document.getElementById('contactInstructor');
+
+        const fanFact = document.createElement('p');
+        fanFact.id = 'fanFact';
+        fanFact.classList.add('hide');
+        fanFact.classList.add('fanFact');
+         instructor.insertBefore(fanFact, contactInstructorBtn);
+
+        const factTitle = document.createElement('h3');
+        factTitle.id = 'factTitle';
+        factTitle.textContent = 'fan fact 😂👻';
+        fanFact.append(factTitle);
+
+        const fact = document.createElement('p');
+        fact.id = 'fact';
+        fanFact.append(fact);
+        console.log(fanFact)
+    }
+
 
     let count = 0;
 
@@ -1533,7 +1584,6 @@ if (page === 'index') {
 
     };
     //console.log(count);
-
     function showInstructorContact () {
         const instructorName = document.querySelector('#instructorName');
         const instructorImage = document.querySelector('#lecturerImage');
@@ -1549,12 +1599,12 @@ if (page === 'index') {
                 sendError.style.margin = '10px auto';
                 sendError.style.color = 'tomato';
                 sendError.id = 'sendError';
-                sendError.classList.add('hide')
+               
                 sendError.style.textAlign = 'center';
                 sendError.textContent = `We don't accept null messages!!`;
                 contactInstructorfunctionality.insertBefore(sendError, contacts);
 
-        const sendResultMessage = document.getElementById('sendResultMessage')
+        const sendResultMessage = document.getElementById('sendResultMessage');
     
         
         contactInstructorBtn.addEventListener('click', () => {
@@ -1757,10 +1807,185 @@ if (page === 'index') {
         });
    
     };
+
+    function showFact () {
+        
+        const fanFact = document.getElementById('fanFact');
+        const fact = document.getElementById('fact');
+        const instructorDesc = document.getElementById('theDescription');
+        
+        try {
+            instructorDesc.addEventListener('mouseover', () => {
+
+
+                instructorDesc.style.transform = 'rotateY(45deg)';
+
+
+            })
+                
+
+
+    
+            instructorDesc.addEventListener('mouseout', () => {
+                     instructorDesc.style.transform = 'rotateX(-45deg)';
+              
+            })
+       
+
+
+        }
+        catch(error) {
+            console.error(error);
+        };
+    };
     
 
     // CONTACT SECTION
+    function sendAMessage () {
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const number = document.getElementById('number');
+        const message = document.getElementById('message');
+        const formElement = document.querySelector('.formElement');
+        const formSubmit = document.getElementById('formSubmit');
+          const overlay = document.getElementById('overlay1');
+           const sendResultMessage = document.getElementById('sendResultMessage');
+        const sendMessageBtn = document.getElementById('formSubmit');
+      
 
+
+        const sendError = document.createElement('p');
+                sendError.style.margin = '0px auto 60px';
+                sendError.style.color = 'tomato';           
+                sendError.classList.add('hide');              
+                sendError.style.textAlign = 'center';
+                sendError.textContent = `We don't accept null messages!!`;
+                formElement.append(sendError);
+                //console.log(sendError);
+
+
+        try {
+            sendMessageBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+                const nameValue = name.value;
+            const messageValue = message.value;
+            const emailValue = email.value;
+            const numberValue = number.value;
+            sendError.className ='';
+            
+            
+            sendError.classList.add('hide');
+             
+            
+            
+
+            if (nameValue !== '' && nameValue !== " " && messageValue !== '' && messageValue !== " " && numberValue !== '' && numberValue !== " " && emailValue !== '' && emailValue !== " ") {
+               fetch( "https://formspree.io/f/xgvrwojj", {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify( {
+                    message: `1. Name: ${nameValue}  2. Message: ${messageValue} 3. Contact: ${numberValue} 4. Email: ${emailValue}`
+                })
+               }).then(response => {
+                if (response.ok) {
+                    console.log('message sent')
+                    sendResultMessage.className = '';
+                    sendResultMessage.classList.add('sendResultMessage');
+                    sendResultMessage.textContent = 'message sent successfully! 😊 ✔';
+                    sendResultMessage.style.color = 'lightgreen';
+                                    overlay.className ='';
+                    overlay.classList.add('overlay');
+                    setInterval(() => {
+                        overlay.className ='';
+                        overlay.classList.add('hide')
+                        
+                        sendResultMessage.className = '';
+                        sendResultMessage.classList.add('hide')
+
+                     }, 3000)
+
+
+                } else {
+                    console.log("couldn't send message")
+                                        sendResultMessage.className = '';
+                    sendResultMessage.classList.add('sendResultMessage');
+                    sendResultMessage.textContent = 'check your network! and try again  🥵 ❌';
+                    sendResultMessage.style.color = 'tomato';
+                    sendResultMessage.style.height = '350px';
+                                    overlay.className ='';
+                     overlay.classList.add('overlay')
+                    setInterval(() => {
+                        overlay.className ='';
+                        overlay.classList.add('hide')
+
+                        sendResultMessage.className = '';
+                        sendResultMessage.classList.add('hide')
+
+                     }, 5000)
+                }
+               }).catch(error => {
+                console.error("Error: ", error);
+                                      sendResultMessage.className = '';
+                    sendResultMessage.classList.add('sendResultMessage');
+                    sendResultMessage.textContent = 'check your network! and try again  🥵 ❌';
+                    sendResultMessage.style.color = 'tomato';
+                    sendResultMessage.style.height = '350px';
+                                    overlay.className ='';
+                     overlay.classList.add('overlay')
+                    setInterval(() => {
+                        overlay.className ='';
+                        overlay.classList.add('hide')
+
+                        sendResultMessage.className = '';
+                        sendResultMessage.classList.add('hide')
+
+                     }, 5000)
+               })
+
+                overlay.className ='';
+            overlay.classList.add('hide')
+
+            sendError.className ='';
+             sendError.classList.add('hide');
+        
+             name.value ='';
+             email.value = '';
+             message.value = '';
+             number.value = '';
+
+            }
+            else {
+
+
+                 sendError.classList.remove('hide');
+                 sendError.className = '';
+
+                 sendResultMessage.className = '';
+                 sendResultMessage.classList.add('hide')
+            }
+
+        
+  
+
+
+        });
+        overlay.addEventListener('click', ()=> {
+                    overlay.className ='';
+                    overlay.classList.add('hide')
+
+                    sendResultMessage.className = '';
+                    sendResultMessage.classList.add('hide')
+        });
+
+        }
+        catch(error){
+            console.error(error);
+        }
+
+    };
 
     // FOOTER SECTION
 

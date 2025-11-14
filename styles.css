@@ -51,6 +51,8 @@ body {
 .darkModeBtnHover:hover {
     background-color: rgba(255, 255, 255, 0.457) !important;
 }
+
+
 /*HEADER SECTION*/
 header {
     background-color: hsl(120, 73%, 75%);
@@ -118,6 +120,7 @@ header > ul {
     flex-direction: row;
     gap: 15px;
     margin-right: 100px;
+    align-content: center;
 }
 
 ul > a{
@@ -135,6 +138,8 @@ header > ul > a > li {
     border: none;
     transition: background-color .5s ease;
     transition: transform .5s ease;
+    align-content: center;
+    color: black;
 }
 
 header > ul > a > li:active {
@@ -160,12 +165,10 @@ header > ul > a > li:hover {
 #hero {
     background-image: url("./pexels-thelazyartist-1346163.jpg");
     height: 140vh;
-   
     width: 99vw;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
     top:100px;
     margin: auto;
 }
@@ -510,7 +513,7 @@ header > ul > a > li:hover {
 }
 
 /*FANFACT SECTION , HIDDEN*/
-.description ,.fanFact{
+.description ,#fanFact{
     text-wrap: wrap;
     width: 50%;
     text-align: center;
@@ -518,10 +521,15 @@ header > ul > a > li:hover {
     border-radius: 5px;
     box-shadow: 2px 2px 4px black;
     padding: 10px;
-    transition: all .5s ease;
+    transition: all 1s ease;
     background: radial-gradient(ellipse at center, rgba(137, 43, 226, 0.525), white, transparent);
 
 }
+#theDescription:hover {
+    transform-style: preserve-3d;
+}
+
+
 
 .contactInstructor {
     min-width: 100px;
@@ -683,7 +691,7 @@ header > ul > a > li:hover {
     border: none;
     border-radius: 50%;
 }
-.fanFact > h3 {
+#fanFact > h3 {
     text-align: center;
     color: rgba(0, 0, 0, 0.833);
 }
@@ -742,7 +750,7 @@ border-radius: 10px;
 display: flex;
 flex-direction: column;
 text-align: center;
-box-shadow:  2px 2px 4px hsl(0, 98%, 49%),  -2px -2px 4px hsl(308, 100%, 50%);
+box-shadow:  2px 2px 4px hsla(0, 1%, 19%, 0.276),  -2px -2px 4px hsla(300, 1%, 43%, 0.409);
 transition: all .5s ease;
 position: relative;
 }
